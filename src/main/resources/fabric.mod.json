@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "therium",
+	"id": "nocom",
 	"version": "${version}",
-	"name": "Therium",
+	"name": "Nocom",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"froze"
@@ -12,18 +12,21 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/therium/icon.png",
+	"icon": "assets/nocom/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.therium.Therium"
+			"com.nocom.Nocom"
+		],
+		"client": [
+			"com.nocom.NocomModClient"
 		],
 		"fabric-datagen": [
-			"com.therium.TheriumModDataGenerator"
+			"com.nocom.NocomModDataGenerator"
 		]
 	},
 	"mixins": [
-		"therium.mixins.json",
+		"nocom.mixins.json",
 		{
 			"config": "modid.client.mixins.json",
 			"environment": "client"
